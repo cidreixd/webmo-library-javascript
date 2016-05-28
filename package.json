@@ -1,0 +1,22 @@
+{
+  "name": "webmo-client",
+  "version": "0.1.0",
+  "description": "A javascript library for webmo",
+  "main": "index.js",
+  "browser": "dist/webmo.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack && MINIFY=1 webpack"
+  },
+  "author": "mactkg <mactkg@gmail.com> (http://makerbox.net/)",
+  "license": "MIT",
+  "dependencies": {
+    "eventemitter2": "^1.0.0",
+    "q": "^1.4.1",
+    "qwest": "^4.1.0"
+  },
+  "devDependencies": {
+    "uglify-loader": "^1.2.0",
+    "webpack": "^1.12.2"
+  }
+}
