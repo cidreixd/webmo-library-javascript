@@ -2,6 +2,10 @@
   "name": "webmo-client",
   "version": "0.1.0",
   "description": "A javascript library for webmo",
+  "homepage": "https://github.com/cidreixd/webmo-library-javascript",
+  "bugs": {
+    "url": "https://github.com/cidreixd/webmo-library-javascript/issues"
+  },
   "main": "index.js",
   "browser": "dist/webmo.js",
   "scripts": {
