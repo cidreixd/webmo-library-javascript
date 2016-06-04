@@ -1,8 +1,13 @@
 {
   "name": "webmo-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A javascript library for webmo",
+  "keywords": ["Webmo", "WoT", "IoT","Cidre", "CidreIxD"],
   "homepage": "https://github.com/cidreixd/webmo-library-javascript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cidreixd/webmo-library-javascript.git"
+  },
   "bugs": {
     "url": "https://github.com/cidreixd/webmo-library-javascript/issues"
   },
@@ -12,6 +17,13 @@
     "watch": "webpack --watch",
     "build": "webpack && MINIFY=1 webpack"
   },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist",
+    "lib",
+    "index.js"
+  ],
   "author": "mactkg <mactkg@gmail.com> (http://makerbox.net/)",
   "license": "MIT",
   "dependencies": {
