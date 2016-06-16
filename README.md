@@ -17,11 +17,16 @@
   <head>
     <script src="https://raw.githubusercontent.com/cidreixd/webmo-library-javascript/master/dist/webmo.min.js"></script>
     <script type="text/javascript">
-    var webmo = new Webmo.ws("webmo.local")
-    webmo.rotate(90)
-    setTimeout(function () {
-        webmo.stop()
-    }, 2000)
+    var webmo = new Webmo.ws("webmo.local") // 引数にはホスト名を指定します。
+    
+    // クライアントがWebmoに接続したら呼ばれる関数
+    webmo.onopen = function () {
+      webmo.rotate(90) // 毎秒90度で回転する
+      setTimeout(function () {
+          // 2秒後に停止
+          webmo.stop()
+      }, 2000)
+    }
     </script>
   </head>
   <body></body>
@@ -39,8 +44,10 @@ npm install webmo-client --save
 var WebmoWs = require('webmo-client').ws
 var motor = new WebmoWs("webmo.local")
 
-motor.rotate(90)
-setTimeout(() => { motor.stop() }, 2000)
+webmo.onopen = () => {
+  motor.rotate(90)
+  setTimeout(() => { motor.stop() }, 2000)
+}
 ```
 
 ## document
