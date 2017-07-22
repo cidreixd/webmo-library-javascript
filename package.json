@@ -1,6 +1,6 @@
 {
   "name": "webmo-client",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A javascript library for webmo",
   "keywords": ["Webmo", "WoT", "IoT","Cidre", "CidreIxD"],
   "homepage": "https://github.com/cidreixd/webmo-library-javascript",
